@@ -330,22 +330,33 @@ installApp.onerror = function() {
 
 ### Released Devices
 
-* Geeksphone
+* [Geeksphone Keon & Peak](http://www.geeksphone.com/#slider-peak)
 
+* [First public Firefox OS developer preview devices](https://hacks.mozilla.org/2013/01/announcing-the-firefox-os-developer-preview-phone/)
 
---
-
-### Released Devices
-
-* Alcatel One Touch Fire
-
+<img src="img/geeksphone.jpg" style="display: block; margin: auto; width: auto; height: 55%">
 
 --
 
 ### Released Devices
 
-* ZTE Open
+* [ZTE Open](https://fxosphone.mozilla.com.tw/zteopen/), [sold by ZTE on eBay](http://stores.ebay.com/ztemobileus)
 
+* [Launched by Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
+
+<img src="img/zte-open.png" style="display: block; margin: auto; width: auto; height: 55%">
+
+--
+
+### Released Devices
+
+<img src="img/onetouch-fire-orange.png" style="display: block; width: 40%; margin: 1%; float: right">
+
+* [Alcatel One Touch Fire](http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_fire.html#.Ui91sLzXHmF)
+
+* [Launched by Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
+
+* [Launched by Deutsche Telekom in Poland](https://blog.mozilla.org/blog/2013/07/11/deutsche-telekom-announces-european-launch-of-firefox-os-devices/)
 
 --
 
