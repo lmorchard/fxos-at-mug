@@ -195,8 +195,7 @@ The Web is faster than you might think, these days.
 
 * So, Firefox OS apps are "just" web pages.
 
-* Use whatever JavaScript framework you'd like (e.g. jQuery, YUI, Dojo, Enyo,
-  etc)
+* Use whatever JavaScript framework you'd like
 
 * Adapt your current site to work better with...
     * small, medium, & large screens
@@ -208,7 +207,7 @@ The Web is faster than you might think, these days.
 
 * So, Firefox OS apps are "just" web pages.
 
-* But, [the Firefox OS Simulator add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search) is very handy.
+* But, [the Firefox OS Simulator add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search) is handy.
 
 <img src="img/dev-simulator.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/dev-simulator-window.png" style="width: 49%; float: left; margin: -30px -1% -1% -1">
@@ -219,7 +218,7 @@ The Web is faster than you might think, these days.
 
 * So, Firefox OS apps are "just" web pages.
 
-* But, it's nice to have [an example from which to start](https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/).
+* But, it's nice to have [an example to start](https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/).
 
 <img src="img/boilerplate-github.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/boilerplate.png" style="width: 49%; float: left; margin: -30px -1% -1% -1">
@@ -328,7 +327,7 @@ installApp.onerror = function() {
 
 --
 
-### Released Devices
+### Available Devices
 
 * [Geeksphone Keon & Peak](http://www.geeksphone.com/#slider-peak)
 
@@ -338,25 +337,25 @@ installApp.onerror = function() {
 
 --
 
-### Released Devices
+### Available Devices
 
 * [ZTE Open](https://fxosphone.mozilla.com.tw/zteopen/), [sold by ZTE on eBay](http://stores.ebay.com/ztemobileus)
 
-* [Launched by Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
+* [From Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
 
 <img src="img/zte-open.png" style="display: block; margin: auto; width: auto; height: 55%">
 
 --
 
-### Released Devices
+### Available Devices
 
 <img src="img/onetouch-fire-orange.png" style="display: block; width: 40%; margin: 1%; float: right">
 
 * [Alcatel One Touch Fire](http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_fire.html#.Ui91sLzXHmF)
 
-* [Launched by Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
+* [From Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
 
-* [Launched by Deutsche Telekom in Poland](https://blog.mozilla.org/blog/2013/07/11/deutsche-telekom-announces-european-launch-of-firefox-os-devices/)
+* [From Deutsche Telekom in Poland](https://blog.mozilla.org/blog/2013/07/11/deutsche-telekom-announces-european-launch-of-firefox-os-devices/)
 
 --
 
