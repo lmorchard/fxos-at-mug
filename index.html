@@ -1,0 +1,549 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Firefox OS</title>
+  <style type="text/css">
+    body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
+  background-color: #aaa;
+}
+
+#wrapper {
+  width: 850px;
+  height: 600px;
+  overflow: hidden;
+  margin: 80px auto 0 auto;
+  box-shadow: 3px 3px 3px #666;
+  background-color: #eee;
+}
+
+.slide {
+  width: auto;
+  height: 540px;
+  padding: 30px;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#controls {
+  width: 850px;
+  margin: -60px auto 0 auto;
+}
+
+#controls div {
+  width: 50px;
+  height: 50px;
+  padding: 5px 50px;
+  font-size: 36px;
+  background-color: #ccc;
+}
+
+#controls div:hover {
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+#controls #prev {
+  float: left;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
+
+  /* Fix selection bug */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#controls #next {
+  float: right;
+  text-align: right;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+
+  /* Fix selection bug */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slide h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.slide h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.slide h3 {
+  font-size: 45px;
+  border-bottom: 1px solid #aaa;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.slide ul {
+  padding: 20px 0 0 60px;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.slide .author h1.name {
+  font-size: 55px;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 185px;
+  margin-bottom: 30px;
+}
+
+.slide .author h3 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #44a4dd;
+}
+
+a:hover {
+  color: #66b5ff;
+}
+
+code {
+  background-color: #ccc;
+}
+
+pre > code {
+  background-color: inherit;
+  font-size: 60%;
+  line-height: 1.3;
+}
+
+.hidden {
+  display: none;
+}
+
+
+    img { width: 75% }
+.slide ul { padding-top: 0px; padding-bottom: 0px; }
+.dim { color: #bbb }
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+      <section class="slide"><h1>Firefox OS</h1>
+
+<h2>A look at Mozilla's OS for the Open Web</h2>
+
+<p><img src="img/firefoxos.png" style="display: block; width: auto; height: 40%; margin: 0 auto 0 auto"></p></section>
+      <section class="slide"><h3>Who am I?</h3>
+
+<p><img src="img/me.jpg" style="float: right; width: 25%"></p>
+
+<p>Hi there.</p>
+
+<pre>
+les orchard
+me@lmorchard.com
+
+{web,mad,computer} scientist;
+{tech,scifi} writer;
+home{brew,roast}er;
+mozillian
+</pre></section>
+      <section class="slide"><h3>What is Firefox OS?</h3>
+
+<ul>
+<li>Mozilla's open source OS for the Open Web</li>
+</ul>
+
+<p><img src="img/firefoxos.png" style="display: block; width: auto; height: 75%; margin: 0 auto 0 auto"></p></section>
+      <section class="slide"><h3>First, there was Boot2Gecko</h3>
+
+<p><img src="img/boot-to-gecko-logo.png" style="width: 18%; float: right; margin-top: -30px"></p>
+
+<p><a href="https://groups.google.com/forum/#!topic/mozilla.dev.platform/dmip1GpD5II[1-25-false]">Announced in July 2011.</a></p>
+
+<ul>
+<li><p>Have you ever wanted to boot straight into Emacs?</p></li>
+<li><p>We built a Linux distro that boots into Gecko, the engine behind Firefox.</p></li>
+<li><p>And, from there, Gecko runs the Web.</p></li>
+</ul></section>
+      <section class="slide"><h3>Gonk, Gecko, and Gaia</h3>
+
+<p><img src="img/boot-to-gecko-logo.png" style="width: 18%; float: right; margin-top: -30px"></p>
+
+<p>There's more to an OS than just a browser.</p>
+
+<ul>
+<li><p><strong>Gonk</strong> - Linux kernel and hardware access</p></li>
+<li><p><strong>Gecko</strong> - Web run-time engine from Firefox</p></li>
+<li><p><strong>Gaia</strong> - User interface, written in HTML / CSS / JS</p></li>
+</ul></section>
+      <section class="slide"><h3>Gonk, Gecko, and Gaia</h3>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Architecture"><img src="img/os-parts.png" style="display: block; margin: auto; width: auto; height: 85%"></a></p></section>
+      <section class="slide"><h3>Gonk<span class="dim">, Gecko, and Gaia</span></h3>
+
+<ul>
+<li><p>A very small Linux distro that borrows from the
+<a href="http://source.android.com/">Android Open Source Project</a></p></li>
+<li><p>Shares some drivers, hardware abstractions, and dev tools with
+Android</p></li>
+<li><p>Generally runs on the same hardware as Android (with some coaxing)</p></li>
+<li><p>Does <em>not</em> run Android apps</p></li>
+</ul></section>
+      <section class="slide"><h3>Gonk<span class="dim">, Gecko, and Gaia</span></h3>
+
+<p><section style="overflow: hidden; display: block; height: 80%; background: url(img/os-parts.png) transparent no-repeat; background-position: center -500px">
+</section></p></section>
+      <section class="slide"><h3><span class="dim">Gonk,</span> Gecko<span class="dim">, and Gaia</span></h3>
+
+<ul>
+<li><p>The <code>b2g</code> executable into which Gonk boots.</p></li>
+<li><p>The guts of Firefox stripped down to a Web runtime.</p></li>
+<li><p>Renders HTML &amp; CSS, executes JavaScript.</p></li>
+<li><p>Provides <a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPIs</a>
+through which JavaScript can access Gonk services.</p></li>
+</ul></section>
+      <section class="slide"><h3><span class="dim">Gonk,</span> Gecko<span class="dim">, and Gaia</span></h3>
+
+<p><section style="overflow: hidden; display: block; height: 80%; background: url(img/os-parts.png) transparent no-repeat; background-position: center -200px">
+</section></p></section>
+      <section class="slide"><h3><span class="dim">Gonk, Gecko, and</span> Gaia</h3>
+
+<p><img src="img/gaia-home.png" style="display: block; float: right; width: 33%; height: auto"></p>
+
+<p><section style="margin-right: 33%"></p>
+
+<ul>
+<li><p>Written entirely in HTML, CSS, &amp; JS using Web APIs</p></li>
+<li><p>Home screen &amp; general app management</p></li>
+<li><p>Status bar &amp; notifications</p></li>
+<li><p>Bundle of built-in apps - e.g. Browser, Calendar, Phone, etc</p></li>
+</ul>
+
+<p></section></p></section>
+      <section class="slide"><h3><span class="dim">Gonk, Gecko, and</span> Gaia</h3>
+
+<p><section style="overflow: hidden; display: block; height: 80%; background: url(img/os-parts.png) transparent no-repeat; background-position: center 0px">
+</section></p></section>
+      <section class="slide"><h3>RED PANDA BREAK!</h3>
+
+<p><em>Did you know?</em> Firefox was named for <a href="http://en.wikipedia.org/wiki/Red_panda">the Red Panda</a>.</p>
+
+<p><a href="https://blog.mozilla.org/blog/2010/12/03/meet-the-newest-and-cutest-mozillians/"><img src="img/red-panda.png" style="display: block; width: auto; height: 60%; margin: 0 auto 0 auto"></a></p></section>
+      <section class="slide"><h3>Open Web Apps</h3>
+
+<ul>
+<li><p>Basically, an Open Web App is a web page.</p></li>
+<li><p>But, web pages aren't <span class="dim">(just)</span> what they used to be.</p></li>
+</ul>
+
+<p><a href="https://developer.mozilla.org/en-US/demos/"><img src="img/demo-studio.png" style="display: block; width: auto; height: 80%; margin: -20px auto 0 auto"></a></p></section>
+      <section class="slide"><h3>Open Web Apps</h3>
+
+<ul>
+<li><p>HTML5 introduces new APIs for media, graphics, storage, geolocation, offline
+access, etc.</p>
+
+<ul><li><em>Yes, apps can work without a net connection</em></li></ul></li>
+<li><p>New <a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPIs</a> proposed as public standards.</p>
+
+<ul><li>Provide access to Gonk hardware services like battery, vibration, bluetooth, SMS, etc.</li></ul></li>
+</ul></section>
+      <section class="slide"><h3>Web is the New Native</h3>
+
+<ul>
+<li><p>Write once, run <strike class="dim">everywhere</strike> a whole bunch of places</p></li>
+<li><p><strong>Everything</strong> is an Open Web App using the Gecko web runtime.</p></li>
+<li><p>Again, <code>b2g</code> is the one and only "native" executable run by Gonk, except for HAL
+processes.</p></li>
+<li><p>If you really, really need to compile C code - consider
+<a href="http://asmjs.org/">asm.js</a> and
+<a href="https://github.com/kripken/emscripten/wiki">emscripten</a></p></li>
+</ul></section>
+      <section class="slide"><h3>Web is the New Native</h3>
+
+<p>The Web is faster than you might think, these days.</p>
+
+<p><a href="https://www.youtube.com/watch?v=XsyogXtyU9o"><img src="img/unreal.png" style="display: block; margin: auto; width: auto; height: 47%"></a></p>
+
+<p><a href="http://www.unrealengine.com/html5/">They ported Unreal Engine 3 to the Web in 4 days.</a></p></section>
+      <section class="slide"><h3>Developing for Firefox OS</h3>
+
+<ul>
+<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
+<li><p>And Open Web Apps are "just" web pages.</p></li>
+<li><p>Use whatever JavaScript framework you'd like (e.g. jQuery, YUI, Dojo, Enyo,
+etc)</p></li>
+<li><p>Adapt your current web site to work better on a variety of small, medium, &amp;
+large screens</p></li>
+</ul></section>
+      <section class="slide"><h3>Developing for Firefox OS</h3>
+
+<ul>
+<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
+<li><p>Still, <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search">the Firefox OS Simulator add-on</a> is very handy.</p></li>
+</ul>
+
+<p><img src="img/dev-simulator.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
+<img src="img/dev-simulator-window.png" style="width: 49%; float: left; margin: -30px -1% -1% -1"></p></section>
+      <section class="slide"><h3>Developing for Firefox OS</h3>
+
+<ul>
+<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
+<li><p>Still, it's nice to have <a href="https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/">an example to start from</a>.</p></li>
+</ul>
+
+<p><img src="img/boilerplate-github.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
+<img src="img/boilerplate.png" style="width: 49%; float: left; margin: -30px -1% -1% -1"></p></section>
+      <section class="slide"><h3>Developing for Firefox OS</h3>
+
+<ul>
+<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
+<li><p>Still, it's nice to have <a href="http://buildingfirefoxos.com">some building blocks</a>.</p></li>
+</ul>
+
+<p><img src="img/building-fxos.png" style="display: block; margin: auto; width: auto; height: 72%"></p></section>
+      <section class="slide"><h3>Publishing Apps</h3>
+
+<p>What are apps without <a href="https://marketplace.firefox.com">a place to find them</a>?</p>
+
+<p><img src="img/marketplace.png" style="display: block; margin: auto; width: auto; height: 72%"></p></section>
+      <section class="slide"><h3>Publishing Apps</h3>
+
+<p>Firefox Marketplace implements the <a href="https://developer.mozilla.org/en-US/docs/Web/Apps">Open Web Apps</a> publishing scheme:</p>
+
+<ul>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest">A JSON manifest describing an App</a></p></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/JavaScript_API">JavaScript APIs for installing &amp; managing Apps</a></p></li>
+</ul>
+
+<p><em>TL;DR: You can run your own "marketplace", even if it's just a page with
+install buttons for your own apps.</em></p></section>
+      <section class="slide"><h3>Publishing Apps</h3>
+
+<p>Sample <code>manifest.webapp</code>:</p>
+
+<pre style="font-size: 0.5em; line-height: 1.25em; margin-top: -2em">
+{
+    "version": "0.1",
+    "name": "Area Tweet",
+    "description": "Find tweets by for any location",
+    "icons": {
+        "48": "http://areatweet.com/images/icon-48.png",
+        "128": "http://areatweet.com/images/icon-128.png"
+    },
+    "developer": {
+        "name": "David Walsh",
+        "url": "http://areatweet.com"
+    },
+    "installs_allowed_from": [
+        "http://areatweet.com",
+        "https://marketplace.firefox.com"
+    ],
+    "default_locale": "en" 
+}
+</pre></section>
+      <section class="slide"><h3>Publishing Apps</h3>
+
+<p>Sample App installation code:</p>
+
+<pre style="font-size: 0.6em; line-height: 1.25em; margin-top: -0.5em">
+var MANIFEST_URL ='https://myapp.example.com/manifest.webapp';
+var installApp = navigator.mozApps.install(MANIFEST_URL);
+
+// Successful install
+installApp.onsuccess = function(data) {
+    console.log("Success, app installed!");
+};
+
+// Install failed
+installApp.onerror = function() {
+    console.log("Install failed\n\n:" + installApp.error.name);
+};
+</pre></section>
+      <section class="slide"><h3>Publishing Apps</h3>
+
+<ul>
+<li>By the way, Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly)</span></li>
+</ul>
+
+<p><img src="img/install-button.png" style="width: 48%; float: left; margin: 1%">
+<img src="img/install-icon.png" style="width: 48%; float: left; margin: 1%"></p></section>
+      <section class="slide"><h3>Publishing Apps</h3>
+
+<ul>
+<li>By the way, Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly)</span></li>
+</ul>
+
+<p><img src="img/clocks-fxos.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
+<img src="img/clocks-android.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
+<img src="img/clocks-ubuntu.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
+<img src="img/clocks-osx.png" style="width: 26%; float: left; margin: -20px 1% 0 0;"></p></section>
+      <section class="slide"><h3>The End (also: FENNEC BREAK!)</h3>
+
+<p><em>Did you know?</em> Firefox for Mobile was codenamed "Fennec" for <a href="http://en.wikipedia.org/wiki/Fennec_fox">the desert fox</a>.</p>
+
+<p><a href="https://wiki.mozilla.org/Mobile/Fennec"><img src="img/fennec_logo.jpg" style="width: 48%; float: left"></a>
+<a href="http://www.flickr.com/photos/joachim_s_mueller/3775054635/"><img src="img/fennec.jpg" style="width: 48%; float: right"></a></p></section>
+      <section class="slide"><div class="author">
+  <h1 class="name">Les Orchard</h1>
+  <h3 class="twitter">
+    <a href="http://twitter.com/@lmorchard" tabindex="-1">@lmorchard</a>
+  </h3>
+  <h3 class="url">
+    <a href="http://lmorchard.com/" tabindex="-1">http://lmorchard.com/</a>
+  </h3>
+</div>
+</section>
+  </div>
+    <div id="controls">
+      <div id="prev">&larr;</div>
+      <div id="next">&rarr;</div>
+    </div>
+  <script type="text/javascript">
+    /**
+ * Takes the last slide and places it at the front.
+ */
+function goBack() {
+  var wrapper = document.querySelector('#wrapper');
+  var lastSlide = wrapper.lastChild;
+  while (lastSlide != null && lastSlide.nodeType !== 1) {
+    lastSlide = lastSlide.previousSibling;
+  }
+
+  wrapper.removeChild(lastSlide);
+  wrapper.insertBefore(lastSlide, wrapper.firstChild);
+
+  updateURL();
+}
+
+/**
+ * Takes the first slide and places it at the end.
+ */
+function goForward() {
+  var wrapper = document.querySelector('#wrapper');
+  var firstSlide = wrapper.firstChild;
+  while (firstSlide != null && firstSlide.nodeType !== 1) {
+    firstSlide = firstSlide.nextSibling;
+  }
+
+  wrapper.removeChild(firstSlide);
+  wrapper.appendChild(firstSlide);
+
+  updateURL();
+}
+
+/**
+ * Updates the current URL to include a hashtag of the current page number.
+ */
+function updateURL() {
+  window.history.replaceState({} , null, '#' + currentPage());
+}
+
+/**
+ * Returns the current page number of the presentation.
+ */
+function currentPage() {
+  return document.querySelector('#wrapper .slide').dataset.page;
+}
+
+/**
+ * Returns a NodeList of each .slide element.
+ */
+function allSlides() {
+  return document.querySelectorAll('#wrapper .slide');
+}
+
+/**
+ * Give each slide a "page" data attribute.
+ */
+function setPageNumbers() {
+  var wrapper = document.querySelector('#wrapper');
+  var pages   = wrapper.querySelectorAll('section');
+  var page;
+
+  for (var i = 0; i < pages.length; ++i) {
+    page = pages[i];
+    page.dataset.page = i;
+  }
+}
+
+/**
+ * Go to the specified page of content.
+ */
+function goToPage(page) {
+  // Try to find the target slide.
+  var targetSlide = document.querySelector('#wrapper .slide[data-page="' + page + '"]');
+
+  // If it actually exists, go forward until we find it.
+  if (targetSlide) {
+    var numSlides = allSlides().length;
+
+    for (var i = 0; currentPage() != page && i < numSlides; i++) {
+      goForward();
+    }
+  }
+}
+
+window.onload = function () {
+
+  // Give each slide a "page" data attribute.
+  setPageNumbers();
+
+  // If the location hash specifies a page number, go to it.
+  var page = window.location.hash.slice(1);
+  if (page) goToPage(page);
+
+  document.onkeydown = function (e) {
+    var kc = e.keyCode;
+
+    // left, down, H, J, backspace - BACK
+    // up, right, K, L, space, enter - FORWARD
+    if (kc == 37 || kc == 40 || kc == 8 || kc == 72 || kc == 74) {
+      goBack();
+    } else if (kc == 38 || kc == 39 || kc == 13 || kc == 32 || kc == 75 || kc == 76) {
+      goForward();
+    }
+  }
+
+  if (document.querySelector('#next') && document.querySelector('#prev')) {
+    document.querySelector('#next').onclick = function (e) {
+      e.preventDefault();
+      goForward();
+    }
+
+    document.querySelector('#prev').onclick = function (e) {
+      e.preventDefault();
+      goBack();
+    }
+  }
+
+}
+
+  </script>
+</body>
+</html>
