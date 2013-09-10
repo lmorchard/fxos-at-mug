@@ -49,9 +49,7 @@ mozillian
 
 * Have you ever wanted to boot straight into Emacs?
 
-* We built a Linux distro that boots into Gecko, the engine behind Firefox.
-
-* And, from there, Gecko runs the Web.
+* We built a Linux distro that boots into Gecko, the engine that powers Firefox.
 
 --
 
@@ -80,10 +78,9 @@ There's more to an OS than just a browser.
 * A very small Linux distro that borrows from the
   [Android Open Source Project](http://source.android.com/)
 
-* Shares some drivers, hardware abstractions, and dev tools with
-  Android
+* Shares Android drivers and low-level dev tools
 
-* Generally runs on the same hardware as Android (with some coaxing)
+* Runs on similar hardware as Android
 
 * Does *not* run Android apps
 
@@ -98,9 +95,9 @@ There's more to an OS than just a browser.
 
 ### <span class="dim">Gonk,</span> Gecko<span class="dim">, and Gaia</span>
 
-* The `b2g` executable into which Gonk boots.
+* The `b2g` executable launched by Gonk.
 
-* The guts of Firefox stripped down to a runtime.
+* Core of Firefox stripped down to a runtime.
 
 * Renders HTML & CSS, executes JavaScript.
 
@@ -120,15 +117,15 @@ There's more to an OS than just a browser.
 
 <img src="img/gaia-home.png" style="display: block; float: right; width: 33%; height: auto">
 
-<section style="margin-right: 33%">
+<section style="margin-right: 35%">
 
-* Written entirely in HTML, CSS, & JS using Web APIs
+* Written in HTML, CSS, & JS
 
-* Home screen & general app management
+* Home screen & app management
 
 * Status bar & notifications
 
-* Bundle of built-in apps - e.g. Browser, Calendar, Phone, etc
+* Built-in apps - Browser, Mail, Calendar, Phone, SMS, etc
 
 </section>
 
@@ -153,7 +150,7 @@ There's more to an OS than just a browser.
 
 * Basically, an Open Web App is a web page.
 
-* But, web pages aren't <span class="dim">(just)</span> what they used to be.
+* Web pages aren't <span class="dim">(just)</span> what they used to be.
 
 [<img src="img/demo-studio.png" style="display: block; width: auto; height: 80%; margin: -20px auto 0 auto">](https://developer.mozilla.org/en-US/demos/)
 
@@ -168,17 +165,15 @@ There's more to an OS than just a browser.
 
 * New [WebAPIs](https://developer.mozilla.org/en-US/docs/WebAPI) proposed as public standards.
 
-  * Provide access to Gonk hardware services like battery, vibration, bluetooth, SMS, etc.
+  * Provide access to hardware services like battery, vibration, bluetooth, SMS, etc.
 
 --
 
 ### Web is the New Native
 
-* Write once, run <strike class="dim">everywhere</strike> a whole bunch of places
+* **Everything** on Firefox OS is an Open Web App
 
-* **Everything** is an Open Web App using the Gecko web runtime.
-
-* Again, `b2g` is the one and only "native" executable.
+* Write once, run <strike class="dim">everywhere</strike> in lots of places
 
 * If you really, really need to compile C code - consider
   [asm.js](http://asmjs.org/) and
@@ -196,47 +191,46 @@ The Web is faster than you might think, these days.
 
 --
 
-### Developing for Firefox OS
+### Developing Apps
 
-* So, Firefox OS apps are "just" Open Web Apps.
-
-* And Open Web Apps are "just" web pages.
+* So, Firefox OS apps are "just" web pages.
 
 * Use whatever JavaScript framework you'd like (e.g. jQuery, YUI, Dojo, Enyo,
   etc)
 
-* Adapt your current web site to work better on a variety of small, medium, &
-  large screens
+* Adapt your current site to work better with...
+    * small, medium, & large screens
+    * mouse, keyboard, & touch input schemes
 
 --
 
-### Developing for Firefox OS
+### Developing Apps
 
-* So, Firefox OS apps are "just" Open Web Apps.
+* So, Firefox OS apps are "just" web pages.
 
-* Still, [the Firefox OS Simulator add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search) is very handy.
+* But, [the Firefox OS Simulator add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search) is very handy.
 
 <img src="img/dev-simulator.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/dev-simulator-window.png" style="width: 49%; float: left; margin: -30px -1% -1% -1">
 
 --
 
-### Developing for Firefox OS
+### Developing Apps
 
-* So, Firefox OS apps are "just" Open Web Apps.
+* So, Firefox OS apps are "just" web pages.
 
-* Still, it's nice to have [an example to start from](https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/).
+* But, it's nice to have [an example from which to start](https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/).
 
 <img src="img/boilerplate-github.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/boilerplate.png" style="width: 49%; float: left; margin: -30px -1% -1% -1">
 
 --
 
-### Developing for Firefox OS
+### Developing Apps
 
-* So, Firefox OS apps are "just" Open Web Apps.
+* So, Firefox OS apps are "just" web pages.
 
-* Still, it's nice to have [some building blocks](http://buildingfirefoxos.com).
+* But, it's nice to have [some building blocks](http://buildingfirefoxos.com).
 
 <img src="img/building-fxos.png" style="display: block; margin: auto; width: auto; height: 72%">
 
@@ -244,7 +238,8 @@ The Web is faster than you might think, these days.
 
 ### Publishing Apps
 
-What are apps without [a place to find them](https://marketplace.firefox.com)?
+App stores are [the new search engines](https://marketplace.firefox.com). 
+<span class="dim">(Kinda)</span>
 
 <img src="img/marketplace.png" style="display: block; margin: auto; width: auto; height: 72%">
 
@@ -254,7 +249,7 @@ What are apps without [a place to find them](https://marketplace.firefox.com)?
 
 Firefox Marketplace implements the [Open Web Apps](https://developer.mozilla.org/en-US/docs/Web/Apps) publishing scheme:
 
-* [A JSON manifest describing an App](https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest)
+* [A JSON manifest for describing an App](https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest)
 
 * [JavaScript APIs for installing & managing Apps](https://developer.mozilla.org/en-US/docs/Web/Apps/JavaScript_API)
 
@@ -313,8 +308,8 @@ installApp.onerror = function() {
 
 ### Publishing Apps
 
-* By the way, Open Web Apps can also be installed via Firefox for Android and
-  Desktop <span class="dim">(Nightly)</span>
+* Open Web Apps can also be installed via Firefox for Android and
+  Desktop <span class="dim">(Nightly, for now)</span>
 
 <img src="img/install-button.png" style="width: 48%; float: left; margin: 1%">
 <img src="img/install-icon.png" style="width: 48%; float: left; margin: 1%">
@@ -323,13 +318,34 @@ installApp.onerror = function() {
 
 ### Publishing Apps
 
-* By the way, Open Web Apps can also be installed via Firefox for Android and
-  Desktop <span class="dim">(Nightly)</span>
+* Open Web Apps can also be installed via Firefox for Android and
+  Desktop <span class="dim">(Nightly, for now)</span>
 
 <img src="img/clocks-fxos.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-android.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-ubuntu.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-osx.png" style="width: 26%; float: left; margin: -20px 1% 0 0;">
+
+--
+
+### Released Devices
+
+* Geeksphone
+
+
+--
+
+### Released Devices
+
+* Alcatel One Touch Fire
+
+
+--
+
+### Released Devices
+
+* ZTE Open
+
 
 --
 

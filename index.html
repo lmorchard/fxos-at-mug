@@ -185,8 +185,7 @@ mozillian
 
 <ul>
 <li><p>Have you ever wanted to boot straight into Emacs?</p></li>
-<li><p>We built a Linux distro that boots into Gecko, the engine behind Firefox.</p></li>
-<li><p>And, from there, Gecko runs the Web.</p></li>
+<li><p>We built a Linux distro that boots into Gecko, the engine that powers Firefox.</p></li>
 </ul></section>
       <section class="slide"><h3>Gonk, Gecko, and Gaia</h3>
 
@@ -207,9 +206,8 @@ mozillian
 <ul>
 <li><p>A very small Linux distro that borrows from the
 <a href="http://source.android.com/">Android Open Source Project</a></p></li>
-<li><p>Shares some drivers, hardware abstractions, and dev tools with
-Android</p></li>
-<li><p>Generally runs on the same hardware as Android (with some coaxing)</p></li>
+<li><p>Shares Android drivers and low-level dev tools</p></li>
+<li><p>Runs on similar hardware as Android</p></li>
 <li><p>Does <em>not</em> run Android apps</p></li>
 </ul></section>
       <section class="slide"><h3>Gonk<span class="dim">, Gecko, and Gaia</span></h3>
@@ -219,8 +217,8 @@ Android</p></li>
       <section class="slide"><h3><span class="dim">Gonk,</span> Gecko<span class="dim">, and Gaia</span></h3>
 
 <ul>
-<li><p>The <code>b2g</code> executable into which Gonk boots.</p></li>
-<li><p>The guts of Firefox stripped down to a runtime.</p></li>
+<li><p>The <code>b2g</code> executable launched by Gonk.</p></li>
+<li><p>Core of Firefox stripped down to a runtime.</p></li>
 <li><p>Renders HTML &amp; CSS, executes JavaScript.</p></li>
 <li><p>Provides <a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPIs</a>
 through which JavaScript can access Gonk services.</p></li>
@@ -233,13 +231,13 @@ through which JavaScript can access Gonk services.</p></li>
 
 <p><img src="img/gaia-home.png" style="display: block; float: right; width: 33%; height: auto"></p>
 
-<p><section style="margin-right: 33%"></p>
+<p><section style="margin-right: 35%"></p>
 
 <ul>
-<li><p>Written entirely in HTML, CSS, &amp; JS using Web APIs</p></li>
-<li><p>Home screen &amp; general app management</p></li>
+<li><p>Written in HTML, CSS, &amp; JS</p></li>
+<li><p>Home screen &amp; app management</p></li>
 <li><p>Status bar &amp; notifications</p></li>
-<li><p>Bundle of built-in apps - e.g. Browser, Calendar, Phone, etc</p></li>
+<li><p>Built-in apps - Browser, Mail, Calendar, Phone, SMS, etc</p></li>
 </ul>
 
 <p></section></p></section>
@@ -256,7 +254,7 @@ through which JavaScript can access Gonk services.</p></li>
 
 <ul>
 <li><p>Basically, an Open Web App is a web page.</p></li>
-<li><p>But, web pages aren't <span class="dim">(just)</span> what they used to be.</p></li>
+<li><p>Web pages aren't <span class="dim">(just)</span> what they used to be.</p></li>
 </ul>
 
 <p><a href="https://developer.mozilla.org/en-US/demos/"><img src="img/demo-studio.png" style="display: block; width: auto; height: 80%; margin: -20px auto 0 auto"></a></p></section>
@@ -269,14 +267,13 @@ access, etc.</p>
 <ul><li><em>Yes, apps can work without a net connection</em></li></ul></li>
 <li><p>New <a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPIs</a> proposed as public standards.</p>
 
-<ul><li>Provide access to Gonk hardware services like battery, vibration, bluetooth, SMS, etc.</li></ul></li>
+<ul><li>Provide access to hardware services like battery, vibration, bluetooth, SMS, etc.</li></ul></li>
 </ul></section>
       <section class="slide"><h3>Web is the New Native</h3>
 
 <ul>
-<li><p>Write once, run <strike class="dim">everywhere</strike> a whole bunch of places</p></li>
-<li><p><strong>Everything</strong> is an Open Web App using the Gecko web runtime.</p></li>
-<li><p>Again, <code>b2g</code> is the one and only "native" executable.</p></li>
+<li><p><strong>Everything</strong> on Firefox OS is an Open Web App</p></li>
+<li><p>Write once, run <strike class="dim">everywhere</strike> in lots of places</p></li>
 <li><p>If you really, really need to compile C code - consider
 <a href="http://asmjs.org/">asm.js</a> and
 <a href="https://github.com/kripken/emscripten/wiki">emscripten</a></p></li>
@@ -288,45 +285,47 @@ access, etc.</p>
 <p><a href="https://www.youtube.com/watch?v=XsyogXtyU9o"><img src="img/unreal.png" style="display: block; margin: auto; width: auto; height: 47%"></a></p>
 
 <p><a href="http://www.unrealengine.com/html5/">They ported Unreal Engine 3 to the Web in 4 days.</a></p></section>
-      <section class="slide"><h3>Developing for Firefox OS</h3>
+      <section class="slide"><h3>Developing Apps</h3>
 
 <ul>
-<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
-<li><p>And Open Web Apps are "just" web pages.</p></li>
+<li><p>So, Firefox OS apps are "just" web pages.</p></li>
 <li><p>Use whatever JavaScript framework you'd like (e.g. jQuery, YUI, Dojo, Enyo,
 etc)</p></li>
-<li><p>Adapt your current web site to work better on a variety of small, medium, &amp;
-large screens</p></li>
+<li><p>Adapt your current site to work better with...</p>
+
+<ul><li>small, medium, &amp; large screens</li>
+<li>mouse, keyboard, &amp; touch input schemes</li></ul></li>
 </ul></section>
-      <section class="slide"><h3>Developing for Firefox OS</h3>
+      <section class="slide"><h3>Developing Apps</h3>
 
 <ul>
-<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
-<li><p>Still, <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search">the Firefox OS Simulator add-on</a> is very handy.</p></li>
+<li><p>So, Firefox OS apps are "just" web pages.</p></li>
+<li><p>But, <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search">the Firefox OS Simulator add-on</a> is very handy.</p></li>
 </ul>
 
 <p><img src="img/dev-simulator.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/dev-simulator-window.png" style="width: 49%; float: left; margin: -30px -1% -1% -1"></p></section>
-      <section class="slide"><h3>Developing for Firefox OS</h3>
+      <section class="slide"><h3>Developing Apps</h3>
 
 <ul>
-<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
-<li><p>Still, it's nice to have <a href="https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/">an example to start from</a>.</p></li>
+<li><p>So, Firefox OS apps are "just" web pages.</p></li>
+<li><p>But, it's nice to have <a href="https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/">an example from which to start</a>.</p></li>
 </ul>
 
 <p><img src="img/boilerplate-github.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/boilerplate.png" style="width: 49%; float: left; margin: -30px -1% -1% -1"></p></section>
-      <section class="slide"><h3>Developing for Firefox OS</h3>
+      <section class="slide"><h3>Developing Apps</h3>
 
 <ul>
-<li><p>So, Firefox OS apps are "just" Open Web Apps.</p></li>
-<li><p>Still, it's nice to have <a href="http://buildingfirefoxos.com">some building blocks</a>.</p></li>
+<li><p>So, Firefox OS apps are "just" web pages.</p></li>
+<li><p>But, it's nice to have <a href="http://buildingfirefoxos.com">some building blocks</a>.</p></li>
 </ul>
 
 <p><img src="img/building-fxos.png" style="display: block; margin: auto; width: auto; height: 72%"></p></section>
       <section class="slide"><h3>Publishing Apps</h3>
 
-<p>What are apps without <a href="https://marketplace.firefox.com">a place to find them</a>?</p>
+<p>App stores are <a href="https://marketplace.firefox.com">the new search engines</a>. 
+<span class="dim">(Kinda)</span></p>
 
 <p><img src="img/marketplace.png" style="display: block; margin: auto; width: auto; height: 72%"></p></section>
       <section class="slide"><h3>Publishing Apps</h3>
@@ -334,7 +333,7 @@ large screens</p></li>
 <p>Firefox Marketplace implements the <a href="https://developer.mozilla.org/en-US/docs/Web/Apps">Open Web Apps</a> publishing scheme:</p>
 
 <ul>
-<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest">A JSON manifest describing an App</a></p></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest">A JSON manifest for describing an App</a></p></li>
 <li><p><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/JavaScript_API">JavaScript APIs for installing &amp; managing Apps</a></p></li>
 </ul>
 
@@ -385,8 +384,8 @@ installApp.onerror = function() {
       <section class="slide"><h3>Publishing Apps</h3>
 
 <ul>
-<li>By the way, Open Web Apps can also be installed via Firefox for Android and
-Desktop <span class="dim">(Nightly)</span></li>
+<li>Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly, for now)</span></li>
 </ul>
 
 <p><img src="img/install-button.png" style="width: 48%; float: left; margin: 1%">
@@ -394,14 +393,29 @@ Desktop <span class="dim">(Nightly)</span></li>
       <section class="slide"><h3>Publishing Apps</h3>
 
 <ul>
-<li>By the way, Open Web Apps can also be installed via Firefox for Android and
-Desktop <span class="dim">(Nightly)</span></li>
+<li>Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly, for now)</span></li>
 </ul>
 
 <p><img src="img/clocks-fxos.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-android.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-ubuntu.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-osx.png" style="width: 26%; float: left; margin: -20px 1% 0 0;"></p></section>
+      <section class="slide"><h3>Released Devices</h3>
+
+<ul>
+<li>Geeksphone</li>
+</ul></section>
+      <section class="slide"><h3>Released Devices</h3>
+
+<ul>
+<li>Alcatel One Touch Fire</li>
+</ul></section>
+      <section class="slide"><h3>Released Devices</h3>
+
+<ul>
+<li>ZTE Open</li>
+</ul></section>
       <section class="slide"><h3>The End (also: FENNEC BREAK!)</h3>
 
 <p><em>Did you know?</em> Firefox for Mobile was codenamed "Fennec" for <a href="http://en.wikipedia.org/wiki/Fennec_fox">the desert fox</a>.</p>
