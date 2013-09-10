@@ -61,7 +61,7 @@ mozillian
 
 There's more to an OS than just a browser.
 
-* **Gonk** - Linux kernel and hardware access
+* **Gonk** - Linux kernel and HAL
 
 * **Gecko** - Web run-time engine from Firefox
 
@@ -100,7 +100,7 @@ There's more to an OS than just a browser.
 
 * The `b2g` executable into which Gonk boots.
 
-* The guts of Firefox stripped down to a Web runtime.
+* The guts of Firefox stripped down to a runtime.
 
 * Renders HTML & CSS, executes JavaScript.
 
@@ -178,8 +178,7 @@ There's more to an OS than just a browser.
 
 * **Everything** is an Open Web App using the Gecko web runtime.
 
-* Again, `b2g` is the one and only "native" executable run by Gonk, except for HAL
-  processes.
+* Again, `b2g` is the one and only "native" executable.
 
 * If you really, really need to compile C code - consider
   [asm.js](http://asmjs.org/) and
