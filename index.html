@@ -172,9 +172,7 @@ mozillian
 </pre></section>
       <section class="slide"><h3>What is Firefox OS?</h3>
 
-<ul>
-<li>Mozilla's open source OS for the Open Web</li>
-</ul>
+<p>Mozilla's open source OS for the Open Web</p>
 
 <p><img src="img/firefoxos.png" style="display: block; width: auto; height: 75%; margin: 0 auto 0 auto"></p></section>
       <section class="slide"><h3>First, there was Boot2Gecko</h3>
@@ -183,10 +181,9 @@ mozillian
 
 <p><a href="https://groups.google.com/forum/#!topic/mozilla.dev.platform/dmip1GpD5II[1-25-false]">Announced in July 2011.</a></p>
 
-<ul>
-<li><p>Have you ever wanted to boot straight into Emacs?</p></li>
-<li><p>We built a Linux distro that boots into Gecko, the engine that powers Firefox.</p></li>
-</ul></section>
+<p>Have you ever wanted to boot straight into Emacs?</p>
+
+<p>We built a Linux distro that boots into Gecko, the engine that powers Firefox.</p></section>
       <section class="slide"><h3>Gonk, Gecko, and Gaia</h3>
 
 <p><img src="img/boot-to-gecko-logo.png" style="width: 18%; float: right; margin-top: -30px"></p>
@@ -203,9 +200,10 @@ mozillian
 <p><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Architecture"><img src="img/os-parts.png" style="display: block; margin: auto; width: auto; height: 85%"></a></p></section>
       <section class="slide"><h3>Gonk<span class="dim">, Gecko, and Gaia</span></h3>
 
+<p>Gonk is a very small Linux distro that borrows from the
+<a href="http://source.android.com/">Android Open Source Project</a></p>
+
 <ul>
-<li><p>A very small Linux distro that borrows from the
-<a href="http://source.android.com/">Android Open Source Project</a></p></li>
 <li><p>Shares Android drivers and low-level dev tools</p></li>
 <li><p>Runs on similar hardware as Android</p></li>
 <li><p>Does <em>not</em> run Android apps</p></li>
@@ -216,9 +214,10 @@ mozillian
 </section></p></section>
       <section class="slide"><h3><span class="dim">Gonk,</span> Gecko<span class="dim">, and Gaia</span></h3>
 
+<p>Gecko is the core of Firefox stripped down to a runtime.</p>
+
 <ul>
 <li><p>The <code>b2g</code> executable launched by Gonk.</p></li>
-<li><p>Core of Firefox stripped down to a runtime.</p></li>
 <li><p>Renders HTML &amp; CSS, executes JavaScript.</p></li>
 <li><p>Provides <a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPIs</a>
 through which JavaScript can access Gonk services.</p></li>
@@ -233,11 +232,13 @@ through which JavaScript can access Gonk services.</p></li>
 
 <p><section style="margin-right: 35%"></p>
 
+<p>Gaia is the ground-floor UI.</p>
+
 <ul>
-<li><p>Written in HTML, CSS, &amp; JS</p></li>
-<li><p>Home screen &amp; app management</p></li>
-<li><p>Status bar &amp; notifications</p></li>
+<li><p>Home screen &amp; status bar</p></li>
+<li><p>App management</p></li>
 <li><p>Built-in apps - Browser, Mail, Calendar, Phone, SMS, etc</p></li>
+<li><p>Written in HTML, CSS, &amp; JS</p></li>
 </ul>
 
 <p></section></p></section>
@@ -252,32 +253,26 @@ through which JavaScript can access Gonk services.</p></li>
 <p><a href="https://blog.mozilla.org/blog/2010/12/03/meet-the-newest-and-cutest-mozillians/"><img src="img/red-panda.png" style="display: block; width: auto; height: 60%; margin: 0 auto 0 auto"></a></p></section>
       <section class="slide"><h3>Open Web Apps</h3>
 
-<ul>
-<li><p>Basically, an Open Web App is a web page.</p></li>
-<li><p>Web pages aren't <span class="dim">(just)</span> what they used to be.</p></li>
-</ul>
+<p>Basically, an Open Web App is a web page.</p>
+
+<p>But, web pages aren't <span class="dim">(just)</span> what they used to be.</p>
 
 <p><a href="https://developer.mozilla.org/en-US/demos/"><img src="img/demo-studio.png" style="display: block; width: auto; height: 80%; margin: -20px auto 0 auto"></a></p></section>
       <section class="slide"><h3>Open Web Apps</h3>
 
-<ul>
-<li><p>HTML5 introduces new APIs for media, graphics, storage, geolocation, offline
+<p>HTML5 introduces new APIs for media, storage, geolocation, offline
 access, etc.</p>
 
-<ul><li><em>Yes, apps can work without a net connection</em></li></ul></li>
-<li><p>New <a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPIs</a> proposed as public standards.</p>
-
-<ul><li>Provide access to hardware services like battery, vibration, bluetooth, SMS, etc.</li></ul></li>
-</ul></section>
+<p>Additional <a href="https://developer.mozilla.org/en-US/docs/WebAPI">WebAPIs</a> proposed as public standards.</p></section>
       <section class="slide"><h3>Web is the New Native</h3>
 
-<ul>
-<li><p><strong>Everything</strong> on Firefox OS is an Open Web App</p></li>
-<li><p>Write once, run <strike class="dim">everywhere</strike> in lots of places</p></li>
-<li><p>If you really, really need to compile C code - consider
-<a href="http://asmjs.org/">asm.js</a> and
-<a href="https://github.com/kripken/emscripten/wiki">emscripten</a></p></li>
-</ul></section>
+<p><strong>Everything</strong> on Firefox OS is an Open Web App</p>
+
+<p>Write once, run <strike class="dim">everywhere</strike> in lots of places</p>
+
+<p>If you really, really need to compile C code - consider
+  <a href="http://asmjs.org/">asm.js</a> and
+  <a href="https://github.com/kripken/emscripten/wiki">emscripten</a></p></section>
       <section class="slide"><h3>Web is the New Native</h3>
 
 <p>The Web is faster than you might think, these days.</p>
@@ -287,38 +282,37 @@ access, etc.</p>
 <p><a href="http://www.unrealengine.com/html5/">They ported Unreal Engine 3 to the Web in 4 days.</a></p></section>
       <section class="slide"><h3>Developing Apps</h3>
 
-<ul>
-<li><p>So, Firefox OS apps are "just" web pages.</p></li>
-<li><p>Use whatever JavaScript framework you'd like</p></li>
-<li><p>Adapt your current site to work better with...</p>
+<p>So, Firefox OS apps are "just" web pages.</p>
 
-<ul><li>small, medium, &amp; large screens</li>
-<li>mouse, keyboard, &amp; touch input schemes</li></ul></li>
+<p>Use whatever JavaScript framework you'd like</p>
+
+<p>Adapt your current site to work better with...</p>
+
+<ul>
+<li><p>Small, medium, &amp; large displays</p></li>
+<li><p>Mouse, keyboard, &amp; touch input schemes</p></li>
 </ul></section>
       <section class="slide"><h3>Developing Apps</h3>
 
-<ul>
-<li><p>So, Firefox OS apps are "just" web pages.</p></li>
-<li><p>But, <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search">the Firefox OS Simulator add-on</a> is handy.</p></li>
-</ul>
+<p>So, Firefox OS apps are "just" web pages.</p>
+
+<p>Also, <a href="https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search">the Firefox OS Simulator add-on</a> is handy.</p>
 
 <p><img src="img/dev-simulator.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/dev-simulator-window.png" style="width: 49%; float: left; margin: -30px -1% -1% -1"></p></section>
       <section class="slide"><h3>Developing Apps</h3>
 
-<ul>
-<li><p>So, Firefox OS apps are "just" web pages.</p></li>
-<li><p>But, it's nice to have <a href="https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/">an example to start</a>.</p></li>
-</ul>
+<p>So, Firefox OS apps are "just" web pages.</p>
+
+<p>Also, it's nice to have <a href="https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/">an example to start</a>.</p>
 
 <p><img src="img/boilerplate-github.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/boilerplate.png" style="width: 49%; float: left; margin: -30px -1% -1% -1"></p></section>
       <section class="slide"><h3>Developing Apps</h3>
 
-<ul>
-<li><p>So, Firefox OS apps are "just" web pages.</p></li>
-<li><p>But, it's nice to have <a href="http://buildingfirefoxos.com">some building blocks</a>.</p></li>
-</ul>
+<p>So, Firefox OS apps are "just" web pages.</p>
+
+<p>Also, it's nice to have <a href="http://buildingfirefoxos.com">some building blocks</a>.</p>
 
 <p><img src="img/building-fxos.png" style="display: block; margin: auto; width: auto; height: 72%"></p></section>
       <section class="slide"><h3>Publishing Apps</h3>
@@ -382,19 +376,15 @@ installApp.onerror = function() {
 </pre></section>
       <section class="slide"><h3>Publishing Apps</h3>
 
-<ul>
-<li>Open Web Apps can also be installed via Firefox for Android and
-Desktop <span class="dim">(Nightly, for now)</span></li>
-</ul>
+<p>Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly, for now)</span></p>
 
 <p><img src="img/install-button.png" style="width: 48%; float: left; margin: 1%">
 <img src="img/install-icon.png" style="width: 48%; float: left; margin: 1%"></p></section>
       <section class="slide"><h3>Publishing Apps</h3>
 
-<ul>
-<li>Open Web Apps can also be installed via Firefox for Android and
-Desktop <span class="dim">(Nightly, for now)</span></li>
-</ul>
+<p>Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly, for now)</span></p>
 
 <p><img src="img/clocks-fxos.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-android.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
@@ -402,29 +392,27 @@ Desktop <span class="dim">(Nightly, for now)</span></li>
 <img src="img/clocks-osx.png" style="width: 26%; float: left; margin: -20px 1% 0 0;"></p></section>
       <section class="slide"><h3>Available Devices</h3>
 
-<ul>
-<li><p><a href="http://www.geeksphone.com/#slider-peak">Geeksphone Keon &amp; Peak</a></p></li>
-<li><p><a href="https://hacks.mozilla.org/2013/01/announcing-the-firefox-os-developer-preview-phone/">First public Firefox OS developer preview devices</a></p></li>
-</ul>
+<p><a href="http://www.geeksphone.com/#slider-peak">Geeksphone Keon &amp; Peak</a></p>
+
+<p><a href="https://hacks.mozilla.org/2013/01/announcing-the-firefox-os-developer-preview-phone/">First public Firefox OS developer preview devices</a></p>
 
 <p><img src="img/geeksphone.jpg" style="display: block; margin: auto; width: auto; height: 55%"></p></section>
       <section class="slide"><h3>Available Devices</h3>
 
-<ul>
-<li><p><a href="https://fxosphone.mozilla.com.tw/zteopen/">ZTE Open</a>, <a href="http://stores.ebay.com/ztemobileus">sold by ZTE on eBay</a></p></li>
-<li><p><a href="https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/">From Telefonica in Spain and Latin America</a></p></li>
-</ul>
+<p><a href="https://fxosphone.mozilla.com.tw/zteopen/">ZTE Open</a>, <a href="http://stores.ebay.com/ztemobileus">sold by ZTE on eBay</a></p>
+
+<p><a href="https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/">From Telefonica in Spain and Latin America</a></p>
 
 <p><img src="img/zte-open.png" style="display: block; margin: auto; width: auto; height: 55%"></p></section>
       <section class="slide"><h3>Available Devices</h3>
 
 <p><img src="img/onetouch-fire-orange.png" style="display: block; width: 40%; margin: 1%; float: right"></p>
 
-<ul>
-<li><p><a href="http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_fire.html#.Ui91sLzXHmF">Alcatel One Touch Fire</a></p></li>
-<li><p><a href="https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/">From Telefonica in Spain and Latin America</a></p></li>
-<li><p><a href="https://blog.mozilla.org/blog/2013/07/11/deutsche-telekom-announces-european-launch-of-firefox-os-devices/">From Deutsche Telekom in Poland</a></p></li>
-</ul></section>
+<p><a href="http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_fire.html#.Ui91sLzXHmF">Alcatel One Touch Fire</a></p>
+
+<p><a href="https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/">From Telefonica in Spain and Latin America</a></p>
+
+<p><a href="https://blog.mozilla.org/blog/2013/07/11/deutsche-telekom-announces-european-launch-of-firefox-os-devices/">From Deutsche Telekom in Poland</a></p></section>
       <section class="slide"><h3>The End (also: FENNEC BREAK!)</h3>
 
 <p><em>Did you know?</em> Firefox for Mobile was codenamed "Fennec" for <a href="http://en.wikipedia.org/wiki/Fennec_fox">the desert fox</a>.</p>

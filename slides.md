@@ -35,7 +35,7 @@ mozillian
 
 ### What is Firefox OS?
 
-* Mozilla's open source OS for the Open Web
+Mozilla's open source OS for the Open Web
 
 <img src="img/firefoxos.png" style="display: block; width: auto; height: 75%; margin: 0 auto 0 auto">
 
@@ -47,9 +47,9 @@ mozillian
 
 [Announced in July 2011.](https://groups.google.com/forum/#!topic/mozilla.dev.platform/dmip1GpD5II[1-25-false])
 
-* Have you ever wanted to boot straight into Emacs?
+Have you ever wanted to boot straight into Emacs?
 
-* We built a Linux distro that boots into Gecko, the engine that powers Firefox.
+We built a Linux distro that boots into Gecko, the engine that powers Firefox.
 
 --
 
@@ -75,8 +75,8 @@ There's more to an OS than just a browser.
 
 ### Gonk<span class="dim">, Gecko, and Gaia</span>
 
-* A very small Linux distro that borrows from the
-  [Android Open Source Project](http://source.android.com/)
+Gonk is a very small Linux distro that borrows from the
+[Android Open Source Project](http://source.android.com/)
 
 * Shares Android drivers and low-level dev tools
 
@@ -95,9 +95,9 @@ There's more to an OS than just a browser.
 
 ### <span class="dim">Gonk,</span> Gecko<span class="dim">, and Gaia</span>
 
-* The `b2g` executable launched by Gonk.
+Gecko is the core of Firefox stripped down to a runtime.
 
-* Core of Firefox stripped down to a runtime.
+* The `b2g` executable launched by Gonk.
 
 * Renders HTML & CSS, executes JavaScript.
 
@@ -119,13 +119,15 @@ There's more to an OS than just a browser.
 
 <section style="margin-right: 35%">
 
-* Written in HTML, CSS, & JS
+Gaia is the ground-floor UI.
 
-* Home screen & app management
+* Home screen & status bar
 
-* Status bar & notifications
+* App management
 
 * Built-in apps - Browser, Mail, Calendar, Phone, SMS, etc
+
+* Written in HTML, CSS, & JS
 
 </section>
 
@@ -148,9 +150,9 @@ There's more to an OS than just a browser.
 
 ### Open Web Apps
 
-* Basically, an Open Web App is a web page.
+Basically, an Open Web App is a web page.
 
-* Web pages aren't <span class="dim">(just)</span> what they used to be.
+But, web pages aren't <span class="dim">(just)</span> what they used to be.
 
 [<img src="img/demo-studio.png" style="display: block; width: auto; height: 80%; margin: -20px auto 0 auto">](https://developer.mozilla.org/en-US/demos/)
 
@@ -158,24 +160,20 @@ There's more to an OS than just a browser.
 
 ### Open Web Apps
 
-* HTML5 introduces new APIs for media, graphics, storage, geolocation, offline
-  access, etc.
+HTML5 introduces new APIs for media, storage, geolocation, offline
+access, etc.
 
-  * *Yes, apps can work without a net connection*
-
-* New [WebAPIs](https://developer.mozilla.org/en-US/docs/WebAPI) proposed as public standards.
-
-  * Provide access to hardware services like battery, vibration, bluetooth, SMS, etc.
+Additional [WebAPIs](https://developer.mozilla.org/en-US/docs/WebAPI) proposed as public standards.
 
 --
 
 ### Web is the New Native
 
-* **Everything** on Firefox OS is an Open Web App
+**Everything** on Firefox OS is an Open Web App
 
-* Write once, run <strike class="dim">everywhere</strike> in lots of places
+Write once, run <strike class="dim">everywhere</strike> in lots of places
 
-* If you really, really need to compile C code - consider
+If you really, really need to compile C code - consider
   [asm.js](http://asmjs.org/) and
   [emscripten](https://github.com/kripken/emscripten/wiki)
 
@@ -193,21 +191,23 @@ The Web is faster than you might think, these days.
 
 ### Developing Apps
 
-* So, Firefox OS apps are "just" web pages.
+So, Firefox OS apps are "just" web pages.
 
-* Use whatever JavaScript framework you'd like
+Use whatever JavaScript framework you'd like
 
-* Adapt your current site to work better with...
-    * small, medium, & large screens
-    * mouse, keyboard, & touch input schemes
+Adapt your current site to work better with...
+
+* Small, medium, & large displays
+
+* Mouse, keyboard, & touch input schemes
 
 --
 
 ### Developing Apps
 
-* So, Firefox OS apps are "just" web pages.
+So, Firefox OS apps are "just" web pages.
 
-* But, [the Firefox OS Simulator add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search) is handy.
+Also, [the Firefox OS Simulator add-on](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/?src=search) is handy.
 
 <img src="img/dev-simulator.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/dev-simulator-window.png" style="width: 49%; float: left; margin: -30px -1% -1% -1">
@@ -216,9 +216,9 @@ The Web is faster than you might think, these days.
 
 ### Developing Apps
 
-* So, Firefox OS apps are "just" web pages.
+So, Firefox OS apps are "just" web pages.
 
-* But, it's nice to have [an example to start](https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/).
+Also, it's nice to have [an example to start](https://hacks.mozilla.org/2013/01/introducing-the-firefox-os-boilerplate-app/).
 
 <img src="img/boilerplate-github.png" style="width: 49%; float: left; margin: -10px -1% -1% 0%">
 <img src="img/boilerplate.png" style="width: 49%; float: left; margin: -30px -1% -1% -1">
@@ -227,9 +227,9 @@ The Web is faster than you might think, these days.
 
 ### Developing Apps
 
-* So, Firefox OS apps are "just" web pages.
+So, Firefox OS apps are "just" web pages.
 
-* But, it's nice to have [some building blocks](http://buildingfirefoxos.com).
+Also, it's nice to have [some building blocks](http://buildingfirefoxos.com).
 
 <img src="img/building-fxos.png" style="display: block; margin: auto; width: auto; height: 72%">
 
@@ -307,8 +307,8 @@ installApp.onerror = function() {
 
 ### Publishing Apps
 
-* Open Web Apps can also be installed via Firefox for Android and
-  Desktop <span class="dim">(Nightly, for now)</span>
+Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly, for now)</span>
 
 <img src="img/install-button.png" style="width: 48%; float: left; margin: 1%">
 <img src="img/install-icon.png" style="width: 48%; float: left; margin: 1%">
@@ -317,8 +317,8 @@ installApp.onerror = function() {
 
 ### Publishing Apps
 
-* Open Web Apps can also be installed via Firefox for Android and
-  Desktop <span class="dim">(Nightly, for now)</span>
+Open Web Apps can also be installed via Firefox for Android and
+Desktop <span class="dim">(Nightly, for now)</span>
 
 <img src="img/clocks-fxos.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
 <img src="img/clocks-android.png" style="width: 22%; float: left; margin: 0 1% 0 1%;">
@@ -329,9 +329,9 @@ installApp.onerror = function() {
 
 ### Available Devices
 
-* [Geeksphone Keon & Peak](http://www.geeksphone.com/#slider-peak)
+[Geeksphone Keon & Peak](http://www.geeksphone.com/#slider-peak)
 
-* [First public Firefox OS developer preview devices](https://hacks.mozilla.org/2013/01/announcing-the-firefox-os-developer-preview-phone/)
+[First public Firefox OS developer preview devices](https://hacks.mozilla.org/2013/01/announcing-the-firefox-os-developer-preview-phone/)
 
 <img src="img/geeksphone.jpg" style="display: block; margin: auto; width: auto; height: 55%">
 
@@ -339,9 +339,9 @@ installApp.onerror = function() {
 
 ### Available Devices
 
-* [ZTE Open](https://fxosphone.mozilla.com.tw/zteopen/), [sold by ZTE on eBay](http://stores.ebay.com/ztemobileus)
+[ZTE Open](https://fxosphone.mozilla.com.tw/zteopen/), [sold by ZTE on eBay](http://stores.ebay.com/ztemobileus)
 
-* [From Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
+[From Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
 
 <img src="img/zte-open.png" style="display: block; margin: auto; width: auto; height: 55%">
 
@@ -351,11 +351,11 @@ installApp.onerror = function() {
 
 <img src="img/onetouch-fire-orange.png" style="display: block; width: 40%; margin: 1%; float: right">
 
-* [Alcatel One Touch Fire](http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_fire.html#.Ui91sLzXHmF)
+[Alcatel One Touch Fire](http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_fire.html#.Ui91sLzXHmF)
 
-* [From Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
+[From Telefonica in Spain and Latin America](https://blog.mozilla.org/blog/2013/08/01/telefonica-announces-launches-of-first-firefox-os-devices-in-latin-america/)
 
-* [From Deutsche Telekom in Poland](https://blog.mozilla.org/blog/2013/07/11/deutsche-telekom-announces-european-launch-of-firefox-os-devices/)
+[From Deutsche Telekom in Poland](https://blog.mozilla.org/blog/2013/07/11/deutsche-telekom-announces-european-launch-of-firefox-os-devices/)
 
 --
 
